@@ -1,0 +1,57 @@
+span {color:green;
+}
+
+h1 {
+    color:blueviolet;
+    border: dashed;
+    border-color: gold; 
+    border-width: 5px;
+    margin: 30px
+}
+
+h2 {
+    color:aquamarine;
+    font-size: 30px;
+    text-decoration: underline;
+    font-weight:bold;
+    padding: 30px;
+    border: dotted;
+    border-color: gold; 
+    border-width: 5px;
+    margin:30px
+}
+
+#loveCSS {
+    color:coral
+}
+
+.odd-bullets {
+    color:chartreuse;
+}
+
+.even-bullets {
+    color:orangered;
+}
+
+#favourite {
+    font-weight:bold;
+    text-decoration: underline;
+    color:deeppink
+}
+
+.movie-div {
+    background-color: gray;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    border-style: double;
+    border-width: 3px;
+    border-color: black;
+    margin: 10px;
+}
+
+.game-div{
+    background-color: bisque
+
+}
