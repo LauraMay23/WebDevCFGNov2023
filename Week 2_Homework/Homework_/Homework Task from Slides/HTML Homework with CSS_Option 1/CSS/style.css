@@ -1,0 +1,158 @@
+/*Every element will have an outline for development purposes*/
+* {
+    outline: 1px solid orchid;
+}
+
+
+body {
+    width:fit-content; /* everything within the body will automatically set the width and height to be the minimum/maximum size to fit the required content*/
+    height:fit-content;
+    color: black; /*sets the font color to black*/
+    background-color: white; /* sets the background color to white*/
+    font-family: Arial, sans-serif; /*sets the font to Arial or sans-serif depending on the font availability in different browsers*/
+    font-size: 13px;/*sets the font size to 13px*/
+    padding: 20px 40px 20px 40px; /*sets the padding-left, padding-top, padding-bottom, padding-right*/
+    border: 5px solid white; /*sets the border thickness to 5px in solid white*/
+    margin: auto; /*sets the margin to automatically adjust to the screen size*/
+}
+
+h1, h2 {  /*defines the font, font size and font color for h1 and h2 elements*/
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    color: white; 
+
+}
+
+h1 { /*defines that all h1 elements will take up 60% of the screen and exists within a flex container that automatically adjusts depending on screen size. All content aligned centrally/in the middle of the screen*/
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h2 { /*defines that all h2 elements will take up 30% of the screen and exist within a flex container that automatically adjusts depending on screen size. All content is aligned to the left edge of the flexbox/screen*/
+    width: 30%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+}
+
+p { /*defines that all p elements will only take up the space required to fit the content and will be aligned centrally/in the middle of the screen*/
+    width: fit-content;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    color: white; /* all p elements will be white, have a size of 14px and be in the Arial font*/
+    font-size: 14px;
+    font-family: Arial;
+}
+
+.para1, .para2 { /*all elements with the class "para1" and "para2" will have the padding-top and padding-bottom set to 20px*/
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.para2 { /*all elements with the class "para2" take up 75% of the screen and are aligned left/to the left edge of the flexbox*/
+    width: 75%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.video-title { /*all elements with the class "video-title" are black, bold and underlined */
+    color: black;
+    font-weight:bold;
+    text-decoration:underline;
+    padding: 1px 1px 1px 1px; /*padding-top, padding-left, padding-bottom, padding-right and margin-bottom defined*/
+    margin-bottom: 1px;
+}
+
+.Navigation { /*all elements with the class "Navigation" automatically set their width and height depending on screen size and will be white, 13px small and in the font sans-serif at weight 500px*/
+    width:auto;
+    height: auto;
+    padding: 8px 5px 8px 5px; /*padding-top, padding-left, padding-bottom, padding-right*/
+    background-color: white;
+    font-size: 13px;
+    font-family: sans-serif;
+    font: weight 500px;
+}
+
+header, footer { /*all header and all footer elements automatically set their width and height depending on screen size and exists within a flexbox container where all content is centered/justified to the middle of the screen*/
+    width: auto;
+    height: auto;
+    padding: 20px 20px 20px 20px; /*padding-top, padding-left, padding-bottom, padding-right*/
+    color: white; /*sets color to white, background color to black and are a lighter font weight than default in sans-serif font*/
+    background-color: black;
+    display: flex;
+    font-family: sans-serif;
+    font-weight: lighter;
+    justify-content: center;
+}
+
+header { /*all header elements have a top to bottom (column) flex-direction*/
+    flex-direction: column;
+    margin-bottom: 10px; /*margin-bottom defined to 10px*/
+}
+
+footer { /*all footer eleements have a left to right (row) flex-direction*/
+    flex-direction: row;
+    margin-top: 10px; /*margin-top set to 10px*/
+}
+
+header.header1 { /*only header elements with the class "header1" have the following styles applied and exist within a flexbox container which adjusts automatically to screen size, and aligns all content centrally/justified to the flexbox and in the middle of the screen*/
+    background-color: black;
+    font-family: Arial;
+    display: flex; 
+    align-items: center;
+    justify-content:center;
+    text-align: justify;
+}
+
+header.header2 { /*only header elements with the class "header2" have the following styles applied and exist within a flexbox container which adjusts automatically to screen size, and aligns all content to the left of the flexbox/left of the screen*/
+    background-image: url(/img/coffee-beans.jpg);
+    font-family: Arial;
+    display: flex;
+    align-items:flex-start;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+img { /*all img elements will only take up 75% of the screen in both width and height, have the following styles applied and exist within a flexbox container which adjusts automatically to screen size, and aligns all content centrally/ the center of the screen*/
+    width: 75%;
+    height: 75%;
+    padding: 10px 10px 10px 10px; /*padding-top, padding-left, padding-bottom, padding-right*/
+    margin:auto;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+
+.table { /*all table elements will take up only enough space to fit the required content and exist within a flexbox container which adjusts automatically to screen size, and aligns all content centrally/ the center of the screen*/
+    width: fit-content;
+    padding: 10px 10px 10px 10px; /*padding-top, padding-left, padding-bottom, padding-right*/
+    margin:auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tableRow { /* all elements with the class "tableRow" will have the following styles applied ( black text with a white background color)*/
+    color: black;
+    background-color: white;
+}
+
+.row2,.row4,.row6 { /* only elements with the classes "row2" "row4" and "row6" will have the following styles applied (white text with black background color)*/
+    color: white;
+    background-color: black;
+}
+
+.video { /*all elements with the class "video" will have the following styles applied and exist within a flexbox container where all content is centered/justified to the middle of the screen*/
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    padding: 1px 1px 1px 1px;
+    margin: auto;
+}
+

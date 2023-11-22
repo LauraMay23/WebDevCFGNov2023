@@ -1,0 +1,54 @@
+head {
+
+}
+
+body {
+    background-color: antiquewhite;
+    padding:20px;
+    margin:auto
+
+}
+
+.myHeader, .myFooter {
+    height:auto;
+    background-color: pink;
+    border: palevioletred;
+    border-style: dashed;
+}
+
+.postedBy {
+    color:black;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+.Name {
+    color: rgb(167, 91, 239);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.myAvatar {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:fit-content
+    
+
+}
+
+.myFunFacts {
+    color: aqua;
+    font-size: 25px;
+    border: skyblue;
+    font-family: 'Montserrat', sans-serif; double;
+
+}
+
+.fun-fact-bullets {
+    background-color: antiquewhite;
+    color: brown;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif; 
+}
+
