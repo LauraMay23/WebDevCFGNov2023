@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--BOOTSTRAP CSS LINK-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+     <!--LINK TO MY EXTERNAL CSS STYLESHEET-->
+    <link href="/main.css" rel="stylesheet">
+    <title>Homework Tracker</title>
+    <!--HOMEWORK TRACKER TITLE-->
+    <h1 class="tracker-title">Get Stuff Done! Homework Tracker</h1>
+</head>
+<body>
+     <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg bg-info-subtle">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.acc.edu.au/blog/homework-ideas/">How to make the most of your study routine</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <!--HOMEWORK PROGRESS BAR: STRIPED, LABELLED WITH PERCENTAGES AND ANIMATED-->
+    <div class="container-fluid m-1 py-3">
+        <div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar bg-danger progress-bar-striped progress-bar-animated" style="width: 25%">25%</div>
+        </div>
+        <div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar bg-primary progress-bar-striped progress-bar-animated" style="width: 50%">50%</div>
+        </div>
+        <div class="progress" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar bg-warning text-dark progress-bar-striped progress-bar-animated" style="width: 75%">75%</div>
+        </div>
+        <div class="progress" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-bar bg-info text-dark progress-bar-striped progress-bar-animated" style="width: 100%">100%</div>
+        </div>
+    </div>
+    <!--CONTAINER FOR HOMEWORK TRACKER USING BOOTSTRAP GRID-->
+    <div class="container-fluid text-center m-1 py-3">
+        <!--FIRST ROW: HEADINGS ONLY-->
+        <div class="row justify-content-center align-items-center m-1 p-1">
+            <!--FIVE ITEMS IN GRID SO ROUNDED DOWN EACH COLUMN TAKES UP 2/12-->
+            <!--COLUMN ONE-->
+            <div class="col">
+                Subject
+            </div>
+            <!--COLUMN TWO-->
+            <div class="col">
+                Assignment
+            </div>
+            <!--COLUMN THREE-->
+            <div class="col">
+                Status
+            </div>
+            <!--COLUMN FOUR-->
+            <div class="col">
+                Due Date
+            </div>
+            <!--COLUMN FIVE-->
+            <div class="col">
+                Days Left
+            </div>
+        <!--SECOND ROW: DEMONSTRATING DEFAULT SELECT SUBJECT AND SELECT STATUS BUTTONS-->
+        <div class="row col-xs-col-2 justify-content-start align-items-center m-1 p-1">
+            <!--COLUMN ONE-->
+            <div class="col">
+                <!--BUTTON-->
+                <div class="btn-group">
+                    <!--GRAY DEFAULT BUTTON TO SELECT SUBJECT-->
+                    <button type="button" class="btn btn-secondary dropdown-toggle btn-sm" data-bs-toggle="dropdown" aria-expanded="false">
+                        Select subject
+                    </button>
+                    <!--DROPDOWN MENU FOR SUBJECT BUTTON OPTIONS-->
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item btn-danger btn-sm" href="#">Maths</a></li>
+                        <li><a class="dropdown-item btn-primary btn-sm" href="#">English</a></li>
+                        <li><a class="dropdown-item btn-warning btn-sm" href="#">Science</a></li>
+                        <li><a class="dropdown-item btn-info btn-sm" href="#">IT</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Add new subject</a></li>
+                    </ul>
+                </div>
+            </div> 
+            <!--COLUMN TWO-->  
+            <div class="col">
+                Empty
+            </div>
+            <!--COLUMN THREE-->
+            <div class="col">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-secondary dropdown-toggle btn-sm" data-bs-toggle="dropdown" aria-expanded="false">
+                        Select Status
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item btn-danger btn-sm" href="#">Incomplete</a></li>
+                        <li><a class="dropdown-item btn-warning btn-sm" href="#">In progress</a></li>
+                        <li><a class="dropdown-item btn-success btn-sm" href="#">Completed</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--COLUMN FOUR-->
+            <div class="col">
+                Empty
+            </div>
+            <!--COLUMN FIVE-->
+            <div class="col">
+                Empty
+            </div>
+        <!--THIRD ROW: DEMONSTRATING ACTIVE SUBJECT CHOSEN BUTTON (IT) AND ACTIVE STATUS SELECTED BUTTON (COMPLETED)-->
+        <div class="row justify-content-start align-items-center m-1 p-1">
+            <!--COLUMN ONE-->
+            <div class="col">
+                <!--BUTTON-->
+                <div class="btn-group">
+                    <button type="button" class="btn btn-info dropdown-toggle btn-sm" data-bs-toggle="dropdown" aria-expanded="false">
+                        IT
+                    </button>
+                    <!--DROPDOWN MENU FOR SUBJECT BUTTON OPTIONS, WITH SELECT SUBJECT AS FIRST OPTION-->
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item btn-secondary btn-sm" href="#">Select subject</a></li>
+                        <li><a class="dropdown-item btn-danger btn-sm" href="#">Maths</a></li>
+                        <li><a class="dropdown-item btn-primary btn-sm" href="#">English</a></li>
+                        <li><a class="dropdown-item btn-warning btn-sm" href="#">Science</a></li>
+                        <li><a class="dropdown-item btn-info btn-sm" href="#">IT</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Add new subject</a></li>
+                    </ul>
+                </div>
+            </div>
+                <!--COLUMN TWO-->
+                <div class="col">
+                    Empty
+                </div>
+                <!--COLUMN THREE-->
+                <div class="col">
+                    <!--BUTTON-->
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-success dropdown-toggle btn-sm" data-bs-toggle="dropdown" aria-expanded="false">
+                            Completed
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item btn-secondary btn-sm" href="#">Select Status</a></li>
+                            <li><a class="dropdown-item btn-danger btn-sm" href="#">Incomplete</a></li>
+                            <li><a class="dropdown-item btn-warning btn-sm" href="#">In progress</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--COLUMN FOUR-->
+                <div class="col">
+                        Empty
+                </div>
+                <!--COLUMN FIVE-->
+                <div class="col">
+                        Empty
+                </div>
+            </div>   
+        </div>
+      </div>
+      <!--LINK TO BOOSTRAP JAVASCRIPT-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>  
+</body>
+<!--FOOTER-->
+<footer class="text-center text-lg-start m-0" style="background-color: #000;">
+    <!--Company Info-->
+    <div class="text-center text-white p-2">
+        Homework Tracker, UK
+    </div>
+    <!--Company Info-->
+    <!-- Copyright -->
+    <div class="text-center text-white p-2" style="background-color: rgba(0, 0, 0);">
+        © 2023 Copyright:
+        <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+      </div>
+      <!-- Copyright -->
+    </div>
+  </footer>
+</html>

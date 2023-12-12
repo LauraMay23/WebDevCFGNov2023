@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--BOOTSTRAP CSS LINK-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!--LINK TO MY EXTERNAL CSS STYLESHEET-->
+    <link href="/main.css" rel="stylesheet">
+    <title>Homework Tracker</title>
+    <!--HOMEWORK TRACKER TITLE-->
+    <h1 class="tracker-title">Get Stuff Done! Homework Tracker</h1>
+</head>
+<body>
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg bg-info-subtle">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <!--HOME-->
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+            <!--LINK TO HOMEWORK ADVICE ARTICLE-->
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.acc.edu.au/blog/homework-ideas/">How to make the most of your study routine</a>
+              </li>
+            <!--DROPDOWN MENU TO LINK TO PAGE2-->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" id="page-1-dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  To Do List
+                </a>
+                <ul class="dropdown-menu" id="page-1-dropdown-menu">
+                  <li><a class="dropdown-item" href="/page2.html">View homework tasks</a></li>
+                  <li><a class="dropdown-item" href="#">Add a new homework task</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <!--DISABLED NAV LINK IN DROPDOWN MENU FOR COMPLETED HOMEWORK TASKS-->
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Completed homework tasks</a>
+              </li>
+            </ul>
+            <!--SEARCH BAR WITH SEARCH BUTTON-->
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!--IMAGE FOR PAGE 1 HOMESCREEN-->
+      <img src="https://th.bing.com/th/id/OIP.MNwkrXd1ShrljjeYl3FlFAHaCO?rs=1&pid=ImgDetMain" alt="colourful collaged letters spelling Homework on a blue maths grid paper background" width="300">
+      <!--BOOTSTRAP JAVA LINK-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>  
+</body>
+<!--FOOTER-->
+<footer class="text-center text-lg-start m-auto" style="background-color: #000;">
+  <!--Company Info-->
+  <div class="text-center text-white p-2">
+      Homework Tracker, UK
+  </div>
+  <!--Company Info-->
+  <!-- Copyright -->
+  <div class="text-center text-white p-2" style="background-color: rgba(0, 0, 0);">
+      © 2023 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+  </div>
+</footer>
+</html>
+
+<!--make a homework tracker styled with Bootstrap and include nav bar and a simple footer e.g. with Contact information, location etc.-->
